@@ -33,7 +33,7 @@ def main():
             await ctx.send(f"Score negativ pas accepte!")
             await ctx.message.add_reaction(emojiX)
 
-    @bot.command(hidden=True aliases=['late'])
+    @bot.command(hidden=True, aliases=['late'])
     async def add_late_score(ctx, name:str, date: str = "0-0-0", score: int = 0):
         """Permet d'annoncer que tu achetes quelques choses aux BDE """
         channel_log = bot.get_channel(log_channel)
