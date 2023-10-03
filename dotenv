@@ -1,0 +1,9 @@
+##This is a exemple of what you should put in the .env file
+## Just copy this file and make the corresponding file
+
+DISCORD_API_TOKEN=[Put a string of the key]
+DISCORD_LOG_CHAN=[put the id of the log channel]
+DISCORD_BILAN_CHAN=[put the id of the log channel]
+
+#not use yet, but some feature will depend of it (I think)
+DISCORD_CMD_CHAN=[put the id of the cmd channel]
