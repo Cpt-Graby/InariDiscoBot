@@ -55,6 +55,11 @@ def main():
         ranking = Tableau.print_scores_for_participant(name)
         await ctx.send(f"{ranking}")
 
+    @bot.command(hidden=True, aliases=['save'])
+    async def saveCsv(ctx, name: str):
+        ranking = Tableau.save_scores_to_csv(name)
+        await ctx.send(f"{name} saved in the docker")
+
     bot.run(settings.DISCORD_API_SECRET, root_logger=True)
 
 if __name__== "__main__":
